@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue 源码解读</title>
+</head>
+<body oncopy="return false" oncut="return false" onselectstart="return false" oncontextmenu="return false">
+  <div id="app">
+    <!-- {{ msg }}
+    <comp age='28'>
+      <comp-child child-age='18'></comp-child>
+    </comp>
+    <transition>
+      <div>测试组件</div>
+    </transition>
+    <comp-child child-age='20'></comp-child> -->
+    <!-- <div>name is pg</div> -->
+    <comp></comp>
+  </div>
+  <script src="../../dist/vue.js"></script>
+  <script>
+    // debugger
+    // Vue.component('comp', {
+    //   template: `<div @click="clickMe">
+    //               <p>I am {{name}} and my age is {{age}}</p>
+    //               <slot></slot>
+    //              </div>`,
+    //   data(){
+    //     return {
+    //       name: 'test name'
+    //     }
+    //   },
+    //   props: {
+    //     age: {
+    //       type: Number | String,
+    //       default: 0
+    //     }
+    //   },
+    //   methods: {
+    //     clickMe(){
+    //       console.log('点我啦')
+    //     }
+    //   }
+    // })
+    // Vue.component('compChild', {
+    //   template: '<div @click.stop="clickChild">I am {{childName}} and my age is {{childAge}}</div>',
+    //   data(){
+    //     return {
+    //       childName: 'child name'
+    //     }
+    //   },
+    //   props: {
+    //     childAge: {
+    //       type: Number | String,
+    //       default: 0
+    //     }
+    //   },
+    //   methods: {
+    //     clickChild(){
+    //       console.log('点子组件啦')
+    //     }
+    //   }
+    // })
+    Vue.component('comp',{
+      template: '<div>name is pg</div>'
+    })
+
+    new Vue({
+      el: '#app',
+      data: {
+        // msg: 'hello vue'
+      },
+      // components: {
+      //   localComp,
+      //   globalComp
+      // }
+    })
+  </script>
+</body>
+</html>
