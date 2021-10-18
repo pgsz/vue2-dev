@@ -18,7 +18,7 @@ export function initMixin (Vue: Class<Component>) {
     //  Vue 实例
     const vm: Component = this
     // a uid
-    // 每个 Vue 实例都有一个 _uid， 并且依次递增
+    // 每个 Vue 实例都有一个 _uid，并且依次递增
     vm._uid = uid++
 
     // a flag to avoid this being observed
