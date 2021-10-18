@@ -5896,7 +5896,7 @@
       //  Vue 实例
       var vm = this;
       // a uid
-      // 每个 Vue 实例都有一个 _uid，并且依次递增
+      // 每个 Vue 实例都有一个 _uid， 并且依次递增
       vm._uid = uid$2++;
 
       // a flag to avoid this being observed
